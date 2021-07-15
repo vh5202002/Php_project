@@ -1,0 +1,13 @@
+drop table users;
+create table users (
+   id bigint primary key auto_increment,
+   username varchar(15) unique,
+   password varchar(60)
+);
+
+drop table profiles;
+create table profiles (
+   id bigint primary key auto_increment,
+   username varchar(15) unique,
+   picture varchar(60)
+);
